@@ -1,0 +1,15 @@
+.SkillTableComponentOuterBody{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillTable tr{
+    border: 1px solid black;
+}
+
+.skillTableComponent{
+    height:200px;
+    overflow-y: auto;
+}
+

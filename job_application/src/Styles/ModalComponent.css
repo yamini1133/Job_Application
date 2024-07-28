@@ -1,0 +1,36 @@
+.modalComponentOuterBody{
+    position:fixed;
+    top:0;left:0;bottom:0;right:0;
+    background-color: rgba(210, 210, 210, 0.9);
+    
+    
+}
+
+.contentContainer{
+    position:fixed;
+    left:30%;
+    top:20%;
+    height:400px;
+    width:800px;
+    background-color: white;
+    display:flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+}
+
+.imageContainer{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.imageContainer img{
+    width:90%;
+    height:50%;
+    margin:10px;
+}
+
+.mainContainer{
+    flex:2;
+}

@@ -1,0 +1,21 @@
+.avatarListContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.title{
+    text-align: center;
+    font-size: large;
+    color: rgb(14, 135, 191);
+    font-weight: bold;
+    position:sticky;
+    top:0;
+}
+
+.cardContainer{
+    flex:1;
+}
+
+.modalContainer{
+    flex:3;
+}
