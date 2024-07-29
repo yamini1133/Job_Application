@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import '../Styles/RowComponent.css';
 import { MdOutlineDeleteOutline } from "react-icons/md";
+import TableRow from './TableRow.js';
     
 
 function RowComponent(props){
@@ -119,7 +120,7 @@ function RowComponent(props){
             }
 
             else{
-            return  <tr>
+            return  <tr >
                 <td>
                     <input type = 'text' placeholder='skill' onChange = {(e)=>onSkillChange(e,i)  } readOnly={setReadOnlyAttribute(i)} value = {r.skill}></input>
                 </td>
@@ -140,6 +141,8 @@ function RowComponent(props){
         return latestRow;
 
     }
+
+       
     
     return(
         <React.Fragment>{setTableData()}</React.Fragment>

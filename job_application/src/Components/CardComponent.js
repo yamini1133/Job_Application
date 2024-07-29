@@ -6,8 +6,8 @@ function CardComponent(props){
     let finalizedSkills = props.finalizedSkills
     
     let skillLabel = finalizedSkills.map((item,index)=>{
-        if(props.index===item.index && finalizedSkills.length>0){
-            return <label className = 'skillLabel'>Skill: {item.finalSkills}</label>
+        if(props.index===item.index && finalizedSkills.length>0 && item.finalSkills!==' '){
+            return <label className = 'skillLabel'> {item.finalSkills}</label>
         }
     })
 
@@ -19,7 +19,7 @@ function CardComponent(props){
         <div className = 'cardComponentOuterBody'>
             <AvatarComponent source={props.avatarSource}></AvatarComponent>
             <button className = 'editBtn' onClick={()=>onEditProfileClick(props.index)}>Edit Profile</button>
-            {skillLabel}
+            <label>{skillLabel}</label>
         </div>
     )
 }
